@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/jasser-labiadh/junit-examples.git'
+                git branch: 'main', url: 'https://github.com/jasser-labiadh/junit-examples.git'
             }
         }
 
